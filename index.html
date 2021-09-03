@@ -9,17 +9,49 @@
 	<title>Video games are awful</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/all.css">
+	<link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
 </head>
 
-<body>
+<script>
+	var slideIndex = 0;
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("textRight");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) {slideIndex = 1}
+	x[slideIndex-1].style.display = "flex";
+	setTimeout(carousel, 15000); // Change image every 15 seconds
+	}
+</script>
+
+<body onload="carousel()">
 <div class="streamCanvas">
-	<div class="textContainer">
-		<div class="textTitle">aznmike</div>
-		<div class="socialContainer">
-			<div class="textSocial"><i class="fab fa-twitter"></i> mikeHEARTu</div>
-			<div class="textSocial"><i class="fab fa-github"></i> mikeHEARTu</div>
-			<div class="textSocial"><i class="fab fa-dribbble"></i> mikeHEARTu</div>
+	<div class="canvasText">
+		<div class="textBlock textLeft">
+			<img src="img/favicon.png" class="textLogo"> aznmike
 		</div>
+
+		<div class="textBlock textRight">
+			<div class="textHeader">i'm mike and i do things</div>
+			<div class="textSubhead"><i class="fas fa-user"></i> he/him</div>
+		</div>
+
+		<div class="textBlock textRight">
+			<div class="textHeader">something something social media</div>
+			<div class="textSubhead"><i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> /mikeheartu</div>
+		</div>
+
+		<div class="textBlock textRight">
+			<div class="textHeader">like, comment, and subscribe</div>
+			<div class="textSubhead"><i class="fab fa-youtube"></i> /aznmike</div>
+		</div>
+	</div>
+	<div class="canvasVideo">
+		<video autoplay muted loop><source src="img/pexels-mart-production-8889186.mp4" type="video/mp4"></video>
 	</div>
 </div>
 </body>
