@@ -1,6 +1,6 @@
 # stream graphics template
- blank template for stream break screens.
+ Stream breakscreen for aznmike.
 ## assets
 - font - [Inter](https://fonts.google.com/specimen/Inter)
 - icons - [Font Awesome](https://fontawesome.com/)
-- background image - [Unsplash](https://unsplash.com/photos/moqWSeBjLIc)
+- video - [Pexels](https://www.pexels.com/video/men-having-fun-playing-video-games-8889186/)
